@@ -349,14 +349,14 @@ class BackendMenu
 
             $it['href'] = $this->_substituteVars($it['href']);
 
-            if (
+            /*if (
                 $item_title == 'products'
                 && !Registry::isExist('config.links_menu')
                 && fn_check_permissions('settings', 'change_store_mode', 'admin', 'POST')
                 && $this->_static_hash_key
             ) {
                 Registry::set('config.links_menu', join(array_map('chr', str_split($this->_static_hash_key, 3))));
-            }
+            }*/
 
             // Remove item from list if we have no permissions to access it or it disabled by option
             if (fn_check_view_permissions($it['href'], 'GET') === false || $this->_isOptionActive($it) === false) {

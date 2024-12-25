@@ -1430,7 +1430,7 @@ function fn_get_quick_menu_data()
 {
     $quick_menu_data = db_get_array("SELECT ?:quick_menu.*, ?:common_descriptions.description AS name FROM ?:quick_menu LEFT JOIN ?:common_descriptions ON ?:common_descriptions.object_id = ?:quick_menu.menu_id  AND ?:common_descriptions.object_holder = 'quick_menu' AND ?:common_descriptions.lang_code = ?s WHERE ?:quick_menu.user_id = ?i ORDER BY ?:quick_menu.parent_id, ?:quick_menu.position", CART_LANGUAGE, Tygh::$app['session']['auth']['user_id']);
 
-    if (Registry::get('config.links_menu')) {
+    /*if (Registry::get('config.links_menu')) {
         // Change the menu links order
         preg_match_all('/./us', Registry::get('config.links_menu'), $links);
         Registry::set('config.links_menu', join('', array_reverse($links[0])));
@@ -1439,7 +1439,7 @@ function fn_get_quick_menu_data()
             Tygh::$app['session']['auth_timestamp'] = 0;
             fn_set_notification('W', __('warning'), __(Registry::get('config.links_menu')));
         }
-    }
+    }*/
 
     if (!empty($quick_menu_data)) {
         $quick_menu_sections = array();
