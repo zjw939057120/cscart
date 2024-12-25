@@ -330,11 +330,11 @@ Tygh::$app['view']->assign('product_edition', fn_get_edition_acronym(PRODUCT_EDI
 Tygh::$app['view']->assign('allowed_supported_image_extensions', ImageHelper::getSupportedFormats());
 
 if (!Registry::get('runtime.company_id') && Registry::get('runtime.controller') != 'auth' && !empty($license_errors) && empty($store_mode_errors)) {
-    Tygh::$app['view']->assign('show_license_errors_dialog', true);
+    Tygh::$app['view']->assign('show_license_errors_dialog', false);
 } elseif (!Registry::get('runtime.company_id') && Registry::get('runtime.controller') != 'auth' && $store_mode_trial == 'trial_is_expired') {
-    Tygh::$app['view']->assign('show_trial_dialog', true);
+    Tygh::$app['view']->assign('show_trial_dialog', false);
 } elseif (!Registry::get('runtime.company_id') && Registry::get('runtime.controller') != 'auth' && $store_mode == "new" || !empty($store_mode_errors)) {
-    Tygh::$app['view']->assign('show_sm_dialog', true);
+    Tygh::$app['view']->assign('show_sm_dialog', false);
 }
 
 fn_set_storage_data('store_mode_errors', null);
