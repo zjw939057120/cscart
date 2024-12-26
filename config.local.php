@@ -38,10 +38,10 @@ $config['db_name'] = 'cart';
 $config['db_user'] = 'root';
 $config['db_password'] = 'password';
 
-$config['database_backend'] = 'mysqli';
+$config['database_backend'] = 'pdo';
 
 // Database tables prefix
-$config['table_prefix'] = 'cscart_';
+$config['table_prefix'] = 'cart_';
 
 /*
  * Script location options
