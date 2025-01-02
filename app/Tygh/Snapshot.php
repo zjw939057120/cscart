@@ -818,6 +818,7 @@ class Snapshot
      */
     public static function notifyCoreChanges()
     {
+        return;
         if (fn_check_permissions('tools', 'view_changes', 'admin')
             && Registry::ifGet('settings.General.monitor_core_changes', 'N') == 'Y'
         ) {

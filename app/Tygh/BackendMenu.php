@@ -265,6 +265,7 @@ class BackendMenu
      */
     protected function getTopSuppliers(array $menu, $amount = 10)
     {
+        return $menu;
         if (!isset($menu['top']['addons']['items']['addons.upgrades'])) {
             return $menu;
         }

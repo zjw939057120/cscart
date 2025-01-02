@@ -80,9 +80,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 }
                 if (empty($user_data['company_id']) && !empty($user_data['user_id'])) {
                     // Insecure admin script
-                    if (!fn_is_development() && Registry::get('config.admin_index') == 'admin.php') {
+/*                    if (!fn_is_development() && Registry::get('config.admin_index') == 'admin.php') {
                         fn_set_notification('E', __('warning'), __('warning_insecure_admin_script', array('[href]' => Registry::get('config.resources.admin_protection_url'))), 'S');
-                    }
+                    }*/
 
                     if (!fn_is_development() && is_file(Registry::get('config.dir.root') . '/install/index.php')) {
                         fn_set_notification('W', __('warning'), __('delete_install_folder'), 'S');

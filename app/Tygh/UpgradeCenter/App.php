@@ -386,6 +386,7 @@ class App
      */
     public function checkUpgrades($show_upgrade_notice = true)
     {
+        return;
         $connectors = $this->getConnectors();
 
         if (!empty($connectors)) {

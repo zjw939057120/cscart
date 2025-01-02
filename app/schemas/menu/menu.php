@@ -252,10 +252,10 @@ $schema = [
                     'type'     => 'divider',
                     'position' => 15
                 ],
-                'addon_market' => [
+/*                'addon_market' => [
                     'href'     => 'addons.market',
                     'position' => 20,
-                ],
+                ],*/
                 'downloaded_add_ons' => [ // (!) Don't move it. The "Add-ons" menu must be the last one for the active menu item.
                     'href'     => 'addons.manage',
                     'position' => 1,

@@ -29,11 +29,11 @@
                     <p>{__("helpdesk_account.activate_free_license_message")}</p>
                 </div>
             {/if}
-        {else}
+{*        {else}
             <div class="well well-small help-block">
                 {include file="buttons/helpdesk.tpl" btn_class="pull-right"}
                 <p>{__("helpdesk_account.signed_out_message.marketplace")}</p>
-            </div>
+            </div>*}
         {/if}
     {/if}
 
