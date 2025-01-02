@@ -9,8 +9,8 @@
 {* Image attributes *}
 {$image_dir_path = "`$images_dir`/addons/`$package.id`"}
 {$icon_class = "packages-package-icon__image packages-package-icon__image--medium"}
-{$logo_path_light = "cart_logo_short.svg"}
-{$logo_path_dark = "cart_logo_short_white.svg"}
+{$logo_path_light = "cart_logo_short.png"}
+{$logo_path_dark = "cart_logo_short_white.png"}
 
 {capture name="icon"}
     {if $package.icon_path}

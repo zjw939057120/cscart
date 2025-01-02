@@ -1,6 +1,6 @@
 {strip}
-    {$logo_path_light = "cart_logo.svg"}
-    {$logo_path_dark = "cart_logo_white.svg"}
+    {$logo_path_light = "cart_logo.png"}
+    {$logo_path_dark = "cart_logo_white.png"}
 
     <a href="{""|fn_url}" {" "}
         class="top-bar__btn top-bar__btn--not-hover mobile-hidden" {" "}
