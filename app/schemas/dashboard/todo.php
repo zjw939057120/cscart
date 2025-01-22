@@ -151,7 +151,7 @@ return [
             ];
         }
     ],
-    'helpdesk_account' => [
+    /*'helpdesk_account' => [
         'type'             => NotificationSeverity::NOTICE,
         'area'             => SiteArea::ADMIN_PANEL,
         'content_callback' => static function ($auth) {
@@ -191,7 +191,7 @@ return [
 
             return $todo_data;
         }
-    ],
+    ],*/
     'upgrade_center_core_upgrade_available' => [
         'type'             => NotificationSeverity::WARNING,
         'area'             => SiteArea::ADMIN_PANEL,

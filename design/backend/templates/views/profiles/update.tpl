@@ -110,7 +110,7 @@
                                     }
                                 </p>
                             </div>
-                        {else}
+                        {*{else}
                             <div class="controls">
                                 <p>{__("helpdesk_account.signed_out_message")}</p>
                                 <p>
@@ -119,7 +119,7 @@
                                         btn_text = __("helpdesk_account.sign_in")
                                     }
                                 </p>
-                            </div>
+                            </div>*}
                         {/if}
                     </div>
                 {/if}
