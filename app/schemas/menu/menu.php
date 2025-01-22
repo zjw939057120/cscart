@@ -144,7 +144,7 @@ $schema = [
                     'href' => 'administration.view',
                     'position' => 50,
                 ],
-                'store_mode' => [
+                /*'store_mode' => [
                     'position' => 100,
                     'type' => 'title',
                     'title' => __('account'),
@@ -161,7 +161,7 @@ $schema = [
                     'href' => 'upgrade_center.manage',
                     'position' => 200,
                     'icon' => 'cloud_download',
-                ],
+                ],*/
                 'languages' => [
                     'href' => 'languages.translations',
                     'title' => __('texts_languages'),
@@ -252,7 +252,7 @@ $schema = [
                     'type'     => 'divider',
                     'position' => 15
                 ],
-/*                'addon_market' => [
+                /*'addon_market' => [
                     'href'     => 'addons.market',
                     'position' => 20,
                 ],*/

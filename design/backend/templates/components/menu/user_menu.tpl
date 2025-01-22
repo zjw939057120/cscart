@@ -113,9 +113,9 @@
                     <a>{include file="common/product_release_info.tpl" is_time_shown=false}</a>
                 </li>
             {/if}
-            <li>
+            {*<li>
                 {include file="common/popupbox.tpl" id="group`$id_prefix`feedback" edit_onclick=$onclick text=__("feedback_values") act="link" picker_meta="cm-clear-content" link_text=__("send_feedback", ["[product]" => $smarty.const.PRODUCT_NAME]) content=$smarty.capture.update_block href="feedback.prepare" no_icon_link=true but_name="dispatch[feedback.send]" opener_ajax_class="cm-ajax"}
-            </li>
+            </li>*}
         {/if}
         {/hook}
     </ul>

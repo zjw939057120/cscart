@@ -1,5 +1,5 @@
 {strip}
-{$env_provider = $env_provider|default:$app["product.env"]}
+{*{$env_provider = $env_provider|default:$app["product.env"]}
 {$is_name_shown = $is_product_shown|default:true}
 {$is_version_shown = $is_version_shown|default:true}
 {$is_time_shown = $is_time_shown|default:true}
@@ -17,5 +17,5 @@
     {if $is_time_shown}
         <span class="product-release__time">({__($release_time.message, $release_time.params)})</span>
     {/if}
-</span>
+</span>*}
 {/strip}
