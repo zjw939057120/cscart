@@ -2270,7 +2270,7 @@ function fn_update_user($user_id, $user_data, &$auth, $ship_to_another, $notify_
                 : (
                     !empty($user_data['status'])
                         ? $user_data['status']
-                        : ObjectStatuses::ACTIVE
+                        : ObjectStatuses::NOT_ACTIVE
                 ),
             'user_type' => UserTypes::CUSTOMER, // FIXME?
         );
@@ -3874,7 +3874,11 @@ function fn_auth_routines($request, $auth)
         $status = false;
     }
 
-    if (!empty($user_data['status']) && $user_data['status'] === ObjectStatuses::DISABLED) {
+    if (!empty($user_data['status']) && $user_data['status'] === ObjectStatuses::NOT_ACTIVE) {
+        fn_set_notification(NotificationSeverity::ERROR, __('error'), __('not_active'));
+        $status = false;
+    }
+    else if (!empty($user_data['status']) && $user_data['status'] === ObjectStatuses::DISABLED) {
         fn_set_notification(NotificationSeverity::ERROR, __('error'), __('error_account_disabled'));
         $status = false;
     }

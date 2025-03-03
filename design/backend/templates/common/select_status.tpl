@@ -60,10 +60,11 @@
         {else}
             <label class="radio inline" for="{$id}_{$obj_id|default:0}_a"><input type="radio" name="{$input_name}" id="{$id}_{$obj_id|default:0}_a" {if $obj.status == "A" || !$obj.status}checked="checked"{/if} value="A" />{__("active")}</label>
 
+            <label class="radio inline" for="{$id}_{$obj_id|default:0}_b"><input type="radio" name="{$input_name}" id="{$id}_{$obj_id|default:0}_b" checked="checked" value="B"/>{__("not_active")}</label>
+
         {if $hidden}
             <label class="radio inline" for="{$id}_{$obj_id|default:0}_h"><input type="radio" name="{$input_name}" id="{$id}_{$obj_id|default:0}_h" {if $obj.status == "H"}checked="checked"{/if} value="H" />{__("hidden")}</label>
         {/if}
-
         {if $obj.status == "P"}
             <label class="radio inline" for="{$id}_{$obj_id|default:0}_p"><input type="radio" name="{$input_name}" id="{$id}_{$obj_id|default:0}_p" checked="checked" value="P"/>{__("pending")}</label>
         {/if}

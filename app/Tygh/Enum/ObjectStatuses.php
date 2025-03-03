@@ -22,6 +22,7 @@ namespace Tygh\Enum;
 class ObjectStatuses
 {
     const ACTIVE = 'A';
+    const NOT_ACTIVE = 'B';
     const DISABLED = 'D';
     const HIDDEN = 'H';
     const PENDING = 'P';
