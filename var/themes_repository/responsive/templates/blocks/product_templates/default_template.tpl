@@ -43,6 +43,10 @@
                 {assign var="list_discount" value="list_discount_`$obj_id`"}
                 {assign var="discount_label" value="discount_label_`$obj_id`"}
 
+                <p class="product-promo-text ">
+                    <span class="product-promo-header">{__("products_promo_header")}</span>
+                    <span class="product-promo-body">{__("products_promo_body")}</span>
+                </p>
                 {hook name="products:promo_text"}
                 {if $product.promo_text}
                 <div class="ty-product-block__note-wrapper">
