@@ -151,7 +151,7 @@
     {hook name="pages:additional_elements"}
     {/hook}
 
-    <div class="ty-form-builder__buttons buttons-container_">
+    <div class="ty-control-group ty-form-builder__buttons buttons-container_">
         {include file="buttons/button.tpl" but_role="submit" but_text=__("submit") but_meta="ty-btn__secondary" but_name="dispatch[pages.send_form]"}
     </div>
 

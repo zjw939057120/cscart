@@ -54,13 +54,13 @@
 </script>
 <p>
     <div class="bottom-copyright">
-    <a class="bottom-copyright" href="/index.php" target="_blank">{__("icp_beian")}</a>
+    <a class="bottom-copyright" href="https://beian.miit.gov.cn" target="_blank">{__("icp_beian")}</a>
     <span class="bottom-copyright">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-    <a class="bottom-copyright" href="/index.php" target="_blank">{__("drug_medical_device_filing")}</a>
+    <a class="bottom-copyright" href="/index.php?dispatch=pages.view&page_id=46" target="_blank">{__("drug_medical_device_filing")}</a>
     <span class="bottom-copyright">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-    <a class="bottom-copyright" href="/index.php" target="_blank">{__("medical_device_business")}</a>
+    <a class="bottom-copyright" href="/index.php?dispatch=pages.view&page_id=47" target="_blank">{__("medical_device_business")}</a>
     <span class="bottom-copyright">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-    <a class="bottom-copyright" href="/index.php" target="_blank">{__("publication_license")}</a>
+    <a class="bottom-copyright" href="/index.php?dispatch=pages.view&page_id=48" target="_blank">{__("publication_license")}</a>
     <span class="bottom-copyright">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
 
     &copy;
