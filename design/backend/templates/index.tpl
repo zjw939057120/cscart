@@ -99,11 +99,11 @@ window.jsErrors = [];
         <meta http-equiv="refresh" content="1;url={$smarty.request.meta_redirect_url|fn_check_meta_redirect|fn_url}" />
     {/if}
 
-    {if $auth.user_id && 'settings'|fn_check_permissions:'change_store_mode':'admin':'POST'}
+    {*{if $auth.user_id && 'settings'|fn_check_permissions:'change_store_mode':'admin':'POST'}
         {include file="views/settings/store_mode.tpl" show=$show_sm_dialog}
         {include file="views/settings/trial_expired.tpl" show=$show_trial_dialog}
         {include file="views/settings/license_errors.tpl" show=$show_license_errors_dialog}
-    {/if}
+    {/if}*}
 
     {hook name="index:after_content"}{/hook}
 

@@ -204,10 +204,10 @@ $breadcrumbs = Breadcrumbs::instance(Registry::get('runtime.controller'), Regist
 Tygh::$app['view']->assign('breadcrumbs', $breadcrumbs);
 
 // Check if we need translate characters to UTF-8 format
-$schema = fn_get_schema('literal_converter', 'utf8');
+/*$schema = fn_get_schema('literal_converter', 'utf8');
 if (isset($schema['need_converting']) && $schema['need_converting']) {
     Tygh::$app['view']->assign('convertible_data', $schema['data']);
-}
+}*/
 
 $schema = fn_get_schema('last_edited_items', 'schema');
 $last_items_cnt = LAST_EDITED_ITEMS_COUNT;
