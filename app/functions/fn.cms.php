@@ -854,7 +854,14 @@ function fn_form_dropdown_object_link($object_data, $object_type)
     fn_set_hook('dropdown_object_link_pre', $object_data, $object_type);
 
     if ($object_type == 'categories') {
-        $result = fn_url('categories.view?category_id=' . $object_data['category_id']);
+        switch ($object_data['category_id']){
+            case 1:
+            $result = "/";
+            break;
+            default:
+            $result = fn_url('categories.view?category_id=' . $object_data['category_id']);
+        }
+
     } elseif ($object_type == 'pages') {
         if (isset($object_data['page_type']) && $object_data['page_type'] == 'L' && isset($object_data['link'])) {
             $result = $object_data['link'];
