@@ -2321,7 +2321,9 @@ function fn_update_user($user_id, $user_data, &$auth, $ship_to_another, $notify_
 
         return false;
     }
-
+    //新注册用户跳转
+    header("Location: ".fn_url('pages.view?page_id=55'), true, 302);
+    exit();
     // Check if this user needs login/password
     if (fn_user_need_login($user_data['user_type'])) {
         // Check if user_login already exists
