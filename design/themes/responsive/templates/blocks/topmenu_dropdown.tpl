@@ -34,7 +34,8 @@
                     </a>
                 {if $item1.$childs}
 
-                    {if !$item1.$childs|fn_check_second_level_child_array:$childs}
+                    {*{if !$item1.$childs|fn_check_second_level_child_array:$childs}*}
+                    {if $item1.$childs}
                     {* Only two levels. Vertical output *}
                         <div class="ty-menu__submenu">
                             <ul class="ty-menu__submenu-items ty-menu__submenu-items-simple cm-responsive-menu-submenu">

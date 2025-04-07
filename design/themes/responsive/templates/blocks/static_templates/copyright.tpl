@@ -27,14 +27,26 @@
 
 </style>
 <style>
+    @media screen and (max-width: 768px) {
+        .login-alert {
+            left: 25%;
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .login-alert {
+            left: 25%;
+            width: 50%;
+        }
+    }
     /* 底部提示框样式 */
     .login-alert {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         background-color: #0d3b54;
         color: white;
-        padding: 10px 20px;
+        padding: 10px 10px;
         border-radius: 20px;
         position: fixed;
         bottom: 20px;
@@ -46,14 +58,14 @@
 
     .alert-text {
         font-size: 18px;
-        margin-right: 20px;
+        padding: 10px 10px;
     }
 
     #login-button {
         background-color: white;
         color: #0d3b54;
         border: none;
-        padding: 10px 20px;
+        padding: 10px 10px;
         border-radius: 10px;
         font-size: 18px;
         cursor: pointer;
@@ -69,6 +81,7 @@
         color: white;
         font-size: 20px;
         cursor: pointer;
+        padding: 10px 10px;
     }
 
     #close-alert:hover {
@@ -94,8 +107,6 @@
     $(function () {
         var bt = $('#toolBackTop');
         var sw = $(document.body)[0].clientWidth;
-        //未登录提示框
-        var loginAlert = $('#login-alert');
 
         var limitsw = (sw - 840) / 2 - 80;  //距离右侧距离
         if (limitsw > 0) {
@@ -107,10 +118,8 @@
             var st = $(window).scrollTop();
             if (st > 30) {
                 bt.show();
-                loginAlert.hide(); // 隐藏提示框
             } else {
                 bt.hide();
-                loginAlert.show(); // 显示提示框
             }
         });
 
