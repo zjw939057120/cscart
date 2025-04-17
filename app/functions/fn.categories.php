@@ -756,6 +756,11 @@ function fn_get_categories_list_with_parents(array $category_ids, $lang_code = C
  */
 function fn_get_category_data($category_id = 0, $lang_code = CART_LANGUAGE, $field_list = '', $get_main_pair = true, $skip_company_condition = false, $preview = false, $get_full_path = false)
 {
+    //导航栏跳转首页
+    if($category_id == 1){
+        header("Location: ".fn_url(), true, 301);
+        exit();
+    }
     // @TODO: remove in 4.3.2, this line is needed for backward compatibility since 4.3.1
     $field_list = str_replace(
         array('selected_layouts', 'default_layout', 'product_details_layout'),
