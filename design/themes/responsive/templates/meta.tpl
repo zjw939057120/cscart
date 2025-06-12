@@ -9,5 +9,10 @@
 {/hook}
 <meta name="keywords" content="{$meta_keywords|default:$location_data.meta_keywords}" />
 <meta name="format-detection" content="telephone=no">
+
+<meta name="original-source" content="{$config.current_location}/{$config.current_url}" />
+<link rel="canonical" href="{$config.current_location}/{$config.current_url}" />
+<meta name="msapplication-TileImage" content="{$config.current_location}/images/favicon.ico.png">
+
 {/hook}
 {$location_data.custom_html nofilter}
