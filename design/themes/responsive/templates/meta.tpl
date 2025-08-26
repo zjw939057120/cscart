@@ -10,6 +10,8 @@
 <meta name="keywords" content="{$meta_keywords|default:$location_data.meta_keywords}" />
 <meta name="format-detection" content="telephone=no">
 
+<meta property="og:site_name" content="{$smarty.capture.page_title|strip|trim nofilter}" />
+<meta name="application-name" content="{$smarty.capture.page_title|strip|trim nofilter}">
 <meta name="original-source" content="{$config.current_location}/{$config.current_url}" />
 <link rel="canonical" href="{$config.current_location}/{$config.current_url}" />
 <meta name="msapplication-TileImage" content="{$config.current_location}/images/favicon.ico.png">
