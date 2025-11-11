@@ -35,7 +35,7 @@ if (!defined('CONSOLE')) {
  */
 $config['db_host'] = 'localhost';
 $config['db_name'] = 'cart';
-$config['db_user'] = 'root';
+$config['db_user'] = 'cart';
 $config['db_password'] = 'password';
 
 $config['database_backend'] = 'pdo';
@@ -58,11 +58,11 @@ $config['table_prefix'] = 'cart_';
  */
 
 // Host and directory where software is installed on no-secure server
-$config['http_host'] = 'www.pnlabmall.com';
+$config['http_host'] = 'www.precisetj.com';
 $config['http_path'] = '';
 
 // Host and directory where software is installed on secure server
-$config['https_host'] = 'www.pnlabmall.com';
+$config['https_host'] = 'www.precisetj.com';
 $config['https_path'] = '';
 
 /*

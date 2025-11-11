@@ -3434,7 +3434,7 @@ CREATE TABLE `cart_companies` (
 --
 
 INSERT INTO `cart_companies` (`company_id`, `status`, `company`, `lang_code`, `address`, `city`, `state`, `country`, `zipcode`, `email`, `phone`, `url`, `storefront`, `secure_storefront`, `entry_page`, `redirect_customer`, `countries_list`, `timestamp`, `shippings`, `logos`, `request_user_id`, `request_account_name`, `request_account_data`) VALUES
-(1, 'A', '普诺实验室', 'zh', 'Boston street', 'Boston', 'MA', 'US', '02125', 'cs-cart@example.com', '+16175556985', 'http://example.com', 'www.pnlabmall.com', 'www.pnlabmall.com', 'none', 'Y', 'CW,KR,PS,SX,BT,TL,AS,CF,DK,UA,UZ,UG,UY,TD,YE,AP,AM,IL,IQ,IR,BZ,CV,RU,BG,HR,GU,GM,IS,GN,GW,LI,CG,LR,CA,GH,GA,HU,MP,AQ,ZA,BW,QA,RW,LU,IN,ID,GT,EC,ER,CU,TW,KG,DJ,KZ,CO,CR,CM,TV,TM,TR,LC,PM,KN,ST,VC,CX,SH,SM,GY,TZ,EG,ET,KI,TJ,SN,CS,RS,SL,CY,SC,MX,TG,DO,DM,AX,AT,VE,BD,AO,AI,AG,AD,FM,NI,NG,NE,NP,BS,PK,BB,PG,PY,PA,BH,BR,BF,BI,BV,GR,PW,CK,KY,DE,IT,SB,ZR,TK,LV,NO,CZ,MD,MA,MC,BN,FJ,SZ,SK,SI,SJ,LK,SG,NC,NZ,JP,CL,KH,GG,GD,GL,GE,VA,EU,BE,MR,MU,TO,SA,FR,TF,GF,PF,FX,FO,PL,PR,BA,TH,JE,ZW,HN,HT,AU,MO,IE,EE,JM,TC,TT,BO,NR,SE,CH,GP,WF,VU,RE,BY,BM,PN,GI,FK,KW,KM,CI,CC,PE,TN,LT,SO,JO,NA,NU,MM,RO,US,VI,LA,KE,FI,SD,SR,GB,IO,VG,NL,MZ,LS,PH,SV,WS,PT,MN,MS,EH,ES,NF,BJ,ZM,GQ,HM,VN,AZ,AF,DZ,AL,LY,SY,AE,OM,AR,AW,KP,HK,MK,MV,IM,MW,MQ,MY,YT,MT,MG,ML,MH,LB,ME', 1269610461, '1', '', 0, '', NULL);
+(1, 'A', '普诺实验室', 'zh', 'Boston street', 'Boston', 'MA', 'US', '02125', 'cs-cart@example.com', '+16175556985', 'http://example.com', 'www.precisetj.com', 'www.precisetj.com', 'none', 'Y', 'CW,KR,PS,SX,BT,TL,AS,CF,DK,UA,UZ,UG,UY,TD,YE,AP,AM,IL,IQ,IR,BZ,CV,RU,BG,HR,GU,GM,IS,GN,GW,LI,CG,LR,CA,GH,GA,HU,MP,AQ,ZA,BW,QA,RW,LU,IN,ID,GT,EC,ER,CU,TW,KG,DJ,KZ,CO,CR,CM,TV,TM,TR,LC,PM,KN,ST,VC,CX,SH,SM,GY,TZ,EG,ET,KI,TJ,SN,CS,RS,SL,CY,SC,MX,TG,DO,DM,AX,AT,VE,BD,AO,AI,AG,AD,FM,NI,NG,NE,NP,BS,PK,BB,PG,PY,PA,BH,BR,BF,BI,BV,GR,PW,CK,KY,DE,IT,SB,ZR,TK,LV,NO,CZ,MD,MA,MC,BN,FJ,SZ,SK,SI,SJ,LK,SG,NC,NZ,JP,CL,KH,GG,GD,GL,GE,VA,EU,BE,MR,MU,TO,SA,FR,TF,GF,PF,FX,FO,PL,PR,BA,TH,JE,ZW,HN,HT,AU,MO,IE,EE,JM,TC,TT,BO,NR,SE,CH,GP,WF,VU,RE,BY,BM,PN,GI,FK,KW,KM,CI,CC,PE,TN,LT,SO,JO,NA,NU,MM,RO,US,VI,LA,KE,FI,SD,SR,GB,IO,VG,NL,MZ,LS,PH,SV,WS,PT,MN,MS,EH,ES,NF,BJ,ZM,GQ,HM,VN,AZ,AF,DZ,AL,LY,SY,AE,OM,AR,AW,KP,HK,MK,MV,IM,MW,MQ,MY,YT,MT,MG,ML,MH,LB,ME', 1269610461, '1', '', 0, '', NULL);
 
 -- --------------------------------------------------------
 
@@ -20242,8 +20242,8 @@ INSERT INTO `cart_logs` (`log_id`, `user_id`, `timestamp`, `type`, `event_type`,
 (2, 1, 1737531061, 'orders', 'N', 'status', '', 'a:3:{s:5:\"order\";s:4:\"# 97\";s:2:\"id\";s:2:\"97\";s:6:\"status\";s:28:\"已处理的 -> 已下订单\";}', '', 1),
 (3, 1, 1737531091, 'orders', 'N', 'status', '', 'a:3:{s:5:\"order\";s:4:\"# 97\";s:2:\"id\";s:2:\"97\";s:6:\"status\";s:28:\"已下订单 -> 已处理的\";}', '', 1),
 (4, 1, 1737531097, 'orders', 'N', 'status', '', 'a:3:{s:5:\"order\";s:4:\"# 97\";s:2:\"id\";s:2:\"97\";s:6:\"status\";s:28:\"已处理的 -> 已下订单\";}', '', 1),
-(5, 1, 1737533228, 'requests', 'N', 'http', '', 'a:3:{s:3:\"url\";s:47:\"http://www.pnlabmall.com/check_url_rewrite.html\";s:7:\"request\";s:2:\"\'\'\";s:8:\"response\";s:154:\"<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx/1.15.11</center>\r\n</body>\r\n</html>\r\n\";}', '', 0),
-(6, 1, 1737533246, 'requests', 'N', 'http', '', 'a:3:{s:3:\"url\";s:47:\"http://www.pnlabmall.com/check_url_rewrite.html\";s:7:\"request\";s:2:\"\'\'\";s:8:\"response\";s:154:\"<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx/1.15.11</center>\r\n</body>\r\n</html>\r\n\";}', '', 0),
+(5, 1, 1737533228, 'requests', 'N', 'http', '', 'a:3:{s:3:\"url\";s:47:\"http://www.precisetj.com/check_url_rewrite.html\";s:7:\"request\";s:2:\"\'\'\";s:8:\"response\";s:154:\"<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx/1.15.11</center>\r\n</body>\r\n</html>\r\n\";}', '', 0),
+(6, 1, 1737533246, 'requests', 'N', 'http', '', 'a:3:{s:3:\"url\";s:47:\"http://www.precisetj.com/check_url_rewrite.html\";s:7:\"request\";s:2:\"\'\'\";s:8:\"response\";s:154:\"<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx/1.15.11</center>\r\n</body>\r\n</html>\r\n\";}', '', 0),
 (7, 1, 1737533938, 'users', 'N', 'session', '', 'a:3:{s:4:\"user\";s:33:\"Admin Admin; admin@admin.com (#1)\";s:2:\"id\";s:1:\"1\";s:10:\"ip_address\";s:9:\"127.0.0.1\";}', '', 0),
 (8, 1, 1737535447, 'users', 'N', 'session', '', 'a:3:{s:4:\"user\";s:33:\"Admin Admin; admin@admin.com (#1)\";s:2:\"id\";s:1:\"1\";s:10:\"ip_address\";s:9:\"127.0.0.1\";}', '', 0);
 
@@ -35890,7 +35890,7 @@ INSERT INTO `cart_settings_objects` (`object_id`, `edition_type`, `name`, `secti
 (28, 'ROOT,ULT:VENDOR', 'company_phone', 5, 0, 'L', '', 60, 'Y', '', 0),
 (29, 'ROOT,ULT:VENDOR', 'company_phone_2', 5, 0, 'L', '', 70, 'Y', '', 0),
 (31, 'ROOT,ULT:VENDOR', 'company_name', 5, 0, 'I', '青岛华元聚合物有限公司', 0, 'Y', '', 0),
-(32, 'ROOT,ULT:VENDOR', 'company_website', 5, 0, 'I', 'http://www.pnlabmall.com/', 90, 'Y', '', 0),
+(32, 'ROOT,ULT:VENDOR', 'company_website', 5, 0, 'I', 'http://www.precisetj.com/', 90, 'Y', '', 0),
 (33, 'ROOT,ULT:VENDOR', 'company_zipcode', 5, 0, 'I', '', 50, 'Y', '', 0),
 (34, 'ROOT,ULT:VENDOR', 'company_country', 5, 0, 'X', 'CN', 30, 'Y', '', 0),
 (35, 'ROOT,ULT:VENDOR', 'company_users_department', 5, 0, 'I', 'admin@pnlabmall.com', 100, 'Y', '', 0),
@@ -36011,7 +36011,7 @@ INSERT INTO `cart_settings_objects` (`object_id`, `edition_type`, `name`, `secti
 (195, 'ROOT,STOREFRONT', 'category_details_thumbnail_height', 9, 0, 'U', '', 210, 'Y', '', 0),
 (196, 'ROOT,STOREFRONT', 'category_detailed_image_width', 9, 0, 'U', '', 220, 'Y', '', 0),
 (197, 'ROOT,STOREFRONT', 'category_detailed_image_height', 9, 0, 'U', '', 230, 'Y', '', 0),
-(201, 'ROOT', 'store_key', 0, 0, 'I', '2000060333;www.pnlabmall.com;admin@admin.com', 0, 'Y', '', 0),
+(201, 'ROOT', 'store_key', 0, 0, 'I', '2000060333;www.precisetj.com;admin@admin.com', 0, 'Y', '', 0),
 (203, 'ROOT', 'header_1', 4, 0, 'H', '', 10, 'N', '', 0),
 (204, 'ROOT,ULT:VENDOR', 'header_7010', 10, 0, 'H', '', 10, 'N', '', 0),
 (206, 'ROOT,ULT:VENDOR', 'header_10003', 1, 0, 'H', '', 20, 'N', '', 0),
@@ -40252,7 +40252,7 @@ CREATE TABLE `cart_storefronts` (
 --
 
 INSERT INTO `cart_storefronts` (`storefront_id`, `url`, `redirect_customer`, `is_default`, `status`, `access_key`, `name`, `theme_name`, `is_accessible_for_authorized_customers_only`) VALUES
-(1, 'www.pnlabmall.com', 'Y', 'Y', 'N', '', '普诺实验室', 'responsive', 'N');
+(1, 'www.precisetj.com', 'Y', 'Y', 'N', '', '普诺实验室', 'responsive', 'N');
 
 -- --------------------------------------------------------
 
